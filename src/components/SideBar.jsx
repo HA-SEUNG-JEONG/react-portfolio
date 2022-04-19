@@ -6,7 +6,7 @@ const SideBar = () => {
   return (
     <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
       <ul>
-        <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
+        <li className="w-[10rem] h-[3.75rem] flex justify-between items-center ml-[-6.25rem] hover:ml-[-0.625rem] duration-300 bg-blue-600">
           <a
             className="flex justify-between items-center w-full text-gray-300"
             href="/"
@@ -14,7 +14,7 @@ const SideBar = () => {
             Linkedin <FaLinkedin size={30} />
           </a>
         </li>
-        <li className="w-[10rem] h-[3.75rem] flex justify-between items-center ml-[-6.25rem] hover:ml-[-10px] duration-300 bg-[#333333]">
+        <li className="w-[10rem] h-[3.75rem] flex justify-between items-center ml-[-6.25rem] hover:ml-[-0.625rem] duration-300 bg-[#333333]">
           <a
             className="flex justify-between items-center w-full text-gray-300"
             href="/"
@@ -22,21 +22,21 @@ const SideBar = () => {
             Github <FaGithub size={30} />
           </a>
         </li>
-        <li className="w-[10rem] h-[3.75rem] flex justify-between items-center ml-[-6.25rem] hover:ml-[-10px] duration-300 bg-[#6fc2b0]">
+        <li className="w-[10rem] h-[3.75rem] flex justify-between items-center ml-[-6.25rem] hover:ml-[-0.625rem] duration-300 bg-[#6fc2b0]">
           <a
             className="flex justify-between items-center w-full text-gray-300"
             href="/"
           >
-            Email <HiOutlineMail size={30} />
+            메일 보내기 <HiOutlineMail size={30} />
           </a>
         </li>
-        <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
+        <li className="w-[10rem] h-[3.75rem] flex justify-between items-center ml-[-6.25rem] hover:ml-[-0.625rem] duration-300 bg-[#565f69]">
           <a
             className="flex justify-between items-center w-full text-gray-300"
             href="/assets/정하승의 포트폴리오"
             download="/assets/정하승의 포트폴리오"
           >
-            Resume <BsFillPersonLinesFill size={30} />
+            이력서 다운받기 <BsFillPersonLinesFill size={30} />
           </a>
         </li>
       </ul>
