@@ -9,7 +9,7 @@ const Home = () => {
         </p>
         <h1 className="font-bold sm:text-7xl text-[#8892b0]">정하승입니다.</h1>
         <div>
-          <button className="text-white group border-2 px-6 py-3 my-4 flex items-center hover:bg-blue-500 hover:border-blue-500">
+          <button className="text-white group border-2 px-6 py-3 my-4 flex items-center hover:bg-yellow-600 hover:border-yellow-bg-yellow-600">
             작업 목록 보기
             <span className="group-hover:rotate-90 duration-300">
               <HiArrowNarrowRight className="ml-4" />
