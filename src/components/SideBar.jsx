@@ -36,7 +36,7 @@ const SideBar = () => {
             href="/assets/정하승의 포트폴리오"
             download="/assets/정하승의 포트폴리오"
           >
-            이력서 다운받기 <BsFillPersonLinesFill size={30} />
+            이력서다운 <BsFillPersonLinesFill size={30} />
           </a>
         </li>
       </ul>
