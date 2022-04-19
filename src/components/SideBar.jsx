@@ -25,7 +25,7 @@ const SideBar = () => {
         <li className="w-[10rem] h-[3.75rem] flex justify-between items-center ml-[-6.25rem] hover:ml-[-0.625rem] duration-300 bg-[#6fc2b0]">
           <a
             className="flex justify-between items-center w-full text-gray-300"
-            href="/"
+            href="mailto:gktmd653@gmail.com"
           >
             메일 보내기 <HiOutlineMail size={30} />
           </a>
