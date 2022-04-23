@@ -14,6 +14,7 @@ const Skills = () => {
             <img
               className="mx-auto my-10"
               src="https://skillicons.dev/icons?i=html"
+              alt="logo"
             />
             <p className="my-4">HTML</p>
           </div>
@@ -21,6 +22,7 @@ const Skills = () => {
             <img
               className="mx-auto my-10"
               src="https://skillicons.dev/icons?i=css"
+              alt="logo"
             />
             <p className="my-4">CSS</p>
           </div>
@@ -28,6 +30,7 @@ const Skills = () => {
             <img
               className="mx-auto my-10"
               src="https://skillicons.dev/icons?i=js"
+              alt="logo"
             />
             <p className="my-4">JAVASCRIPT</p>
           </div>
@@ -35,6 +38,7 @@ const Skills = () => {
             <img
               className="mx-auto my-10"
               src="https://skillicons.dev/icons?i=react"
+              alt="logo"
             />
             <p className="my-4">REACT</p>
           </div>
@@ -42,6 +46,7 @@ const Skills = () => {
             <img
               className="mx-auto my-10"
               src="https://skillicons.dev/icons?i=ts"
+              alt="logo"
             />
             <p className="my-4">TYPESCRIPT</p>
           </div>
