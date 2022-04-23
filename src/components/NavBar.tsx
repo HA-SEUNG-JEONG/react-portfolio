@@ -29,7 +29,11 @@ const NavBar = () => {
             Work
           </Link>
         </li>
-        <li>Contact</li>
+        <li>
+          <Link to="contact" spy={true} smooth={true} duration={500}>
+            Contact
+          </Link>
+        </li>
       </ul>
 
       <div onClick={navOnClick} className="md:hidden z-10">
