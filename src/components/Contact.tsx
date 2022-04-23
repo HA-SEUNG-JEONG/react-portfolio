@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useForm } from "react-hook-form";
 
 interface ContactForm {
@@ -15,6 +14,9 @@ const Contact = () => {
     resetField,
   } = useForm<ContactForm>({ mode: "onChange" });
   const onValid = ({ email, name }: ContactForm) => {
+    if (!email || !name) {
+      alert("이메일 혹은 이름이 입력되지 않았습니다.");
+    }
     resetField("name");
     resetField("email");
     resetField("message");
@@ -48,12 +50,16 @@ const Contact = () => {
           placeholder="이름"
           name="name"
         />
-        <span className="text-red-600 mt-2 font-bold">
+        <span className="text-red-500 mt-2 font-bold">
           {errors.name?.message}
         </span>
         <input
           {...register("email", {
             required: "이메일은 필수 항목입니다.",
+            pattern: {
+              value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+              message: "이메일 주소가 유효하지 않습니다.",
+            },
           })}
           className="my-4 p-2 bg-[#ccd6f6]"
           type="email"
