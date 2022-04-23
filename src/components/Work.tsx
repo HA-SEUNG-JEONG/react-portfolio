@@ -2,11 +2,11 @@ import NomFlix from "../assets/netflix_project.PNG";
 import Coin from "../assets/coin_project.PNG";
 import ReactMovie from "../assets/reactmovie.PNG";
 import Trello from "../assets/trello_project.PNG";
-import Twitter from "../assets/twitter_project.PNG";
+import Twitter from "../assets/coin_project.PNG";
 
 const Work = () => {
   return (
-    <div name="work" className="w-full md:h-screen text-gray-300 bg-[#0a192f]">
+    <div id="work" className="w-full md:h-screen text-gray-300 bg-[#0a192f]">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 text-gray-300 border-pink-600">

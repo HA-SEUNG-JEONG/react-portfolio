@@ -2,6 +2,7 @@ import { useState } from "react";
 import { AiFillHome } from "react-icons/ai";
 import { FaBars, FaTimes } from "react-icons/fa";
 import SideBar from "./SideBar";
+import { Link } from "react-scroll/modules";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -13,9 +14,21 @@ const NavBar = () => {
       </div>
 
       <ul className="hidden md:flex ">
-        <li>Home</li>
-        <li>About</li>
-        <li>Projects</li>
+        <li>
+          <Link to="home" spy={true} smooth={true} duration={500}>
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link to="skills" spy={true} smooth={true} duration={500}>
+            Skill
+          </Link>
+        </li>
+        <li>
+          <Link to="work" spy={true} smooth={true} duration={500}>
+            Work
+          </Link>
+        </li>
         <li>Contact</li>
       </ul>
 
