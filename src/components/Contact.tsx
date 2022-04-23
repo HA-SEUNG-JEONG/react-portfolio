@@ -1,12 +1,32 @@
+import { useState } from "react";
+import { useForm } from "react-hook-form";
+
+interface ContactForm {
+  name: string;
+  email: string;
+  message?: string;
+}
+
 const Contact = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    resetField,
+  } = useForm<ContactForm>({ mode: "onChange" });
+  const onValid = ({ email, name }: ContactForm) => {
+    resetField("name");
+    resetField("email");
+    resetField("message");
+    window.open(`mailto:${email}`);
+  };
   return (
     <div
       id="contact"
       className="w-full h-screen bg-[#0a192f] flex jusify-center items-center p-4"
     >
       <form
-        method="POST"
-        action="https://getform.io/f/8c3d71b8-e00b-4bf1-9d91-800f8a66d7ea"
+        onSubmit={handleSubmit(onValid)}
         className="flex flex-col max-w-[37.5rem] w-full "
       >
         <div className="pb-8">
@@ -16,17 +36,33 @@ const Contact = () => {
           <p className="text-gray-300 py-4">메일 보내기</p>
         </div>
         <input
+          {...register("name", {
+            required: "이름은 필수 항목입니다.",
+            minLength: {
+              message: "이름은 5글자 이상으로 해주세요",
+              value: 5,
+            },
+          })}
           className="bg-[#ccd6f6] p-2"
           type="text"
           placeholder="이름"
           name="name"
         />
+        <span className="text-red-600 mt-2 font-bold">
+          {errors.name?.message}
+        </span>
         <input
+          {...register("email", {
+            required: "이메일은 필수 항목입니다.",
+          })}
           className="my-4 p-2 bg-[#ccd6f6]"
           type="email"
           placeholder="이메일"
           name="email"
         />
+        <span className="text-red-600 mb-2 font-bold">
+          {errors.email?.message}
+        </span>
         <textarea
           className="bg-[#ccd6f6] p-2"
           name="message"
