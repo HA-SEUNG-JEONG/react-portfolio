@@ -1,9 +1,3 @@
-import NomFlix from "../assets/netflix_project.PNG";
-import Coin from "../assets/coin_project.PNG";
-import ReactMovie from "../assets/reactmovie.PNG";
-import Trello from "../assets/trello_project.PNG";
-import Twitter from "../assets/coin_project.PNG";
-
 const Work = () => {
   return (
     <div id="work" className="w-full md:h-screen text-gray-300 bg-[#0a192f]">
@@ -15,10 +9,7 @@ const Work = () => {
           <p className="py-6">작업 목록</p>
         </div>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-          <div
-            style={{ backgroundImage: `url(${Coin})` }}
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
-          >
+          <div className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div">
             <div className="opacity-0 group-hover:opacity-100">
               <span className="text-2xl font-bold text-white tracking-wider">
                 Coin Tracker
@@ -37,10 +28,7 @@ const Work = () => {
               </div>
             </div>
           </div>
-          <div
-            style={{ backgroundImage: `url(${NomFlix})` }}
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
-          >
+          <div className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div">
             <div className="opacity-0 group-hover:opacity-100">
               <span className="text-2xl font-bold text-white tracking-wider">
                 NetFlix
@@ -59,10 +47,7 @@ const Work = () => {
               </div>
             </div>
           </div>
-          <div
-            style={{ backgroundImage: `url(${ReactMovie})` }}
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
-          >
+          <div className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div">
             <div className="opacity-0 group-hover:opacity-100">
               <span className="text-2xl font-bold text-white tracking-wider">
                 React Moive Website
@@ -81,10 +66,7 @@ const Work = () => {
               </div>
             </div>
           </div>
-          <div
-            style={{ backgroundImage: `url(${Trello})` }}
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
-          >
+          <div className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div">
             <div className="opacity-0 group-hover:opacity-100">
               <span className="text-2xl font-bold text-white tracking-wider">
                 Trello Clone
@@ -103,10 +85,7 @@ const Work = () => {
               </div>
             </div>
           </div>
-          <div
-            style={{ backgroundImage: `url(${Twitter})` }}
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
-          >
+          <div className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div">
             <div className="opacity-0 group-hover:opacity-100">
               <span className="text-2xl font-bold text-white tracking-wider">
                 Twitter
