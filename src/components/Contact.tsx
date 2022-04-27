@@ -25,7 +25,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="w-full h-screen bg-[#0a192f] flex jusify-center items-center p-4"
+      className="w-full h-screen bg-[#212327] flex jusify-center items-center p-4"
     >
       <form
         onSubmit={handleSubmit(onValid)}
