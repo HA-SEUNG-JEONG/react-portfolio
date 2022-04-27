@@ -25,17 +25,16 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="w-full h-screen bg-[#212327] flex jusify-center items-center p-4"
+      className="w-full h-screen bg-[#212327] flex justify-center items-center p-4"
     >
       <form
         onSubmit={handleSubmit(onValid)}
-        className="flex flex-col max-w-[37.5rem] w-full "
+        className="flex flex-col max-w-[37.5rem] w-full"
       >
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-pink-400 text-gray-300">
             Contact
           </p>
-          <p className="text-gray-300 py-4">메일 보내기</p>
         </div>
         <input
           {...register("name", {
@@ -45,7 +44,7 @@ const Contact = () => {
               value: 5,
             },
           })}
-          className="bg-[#ccd6f6] p-2"
+          className="bg-[#ccd6f6] p-2 flex justify-center "
           type="text"
           placeholder="이름"
           name="name"
@@ -61,7 +60,7 @@ const Contact = () => {
               message: "이메일 주소가 유효하지 않습니다.",
             },
           })}
-          className="my-4 p-2 bg-[#ccd6f6]"
+          className="my-4 p-2 bg-[#ccd6f6] flex justify-center "
           type="email"
           placeholder="이메일"
           name="email"
@@ -70,7 +69,7 @@ const Contact = () => {
           {errors.email?.message}
         </span>
         <textarea
-          className="bg-[#ccd6f6] p-2"
+          className="bg-[#ccd6f6] p-2 flex justify-center "
           name="message"
           rows={10}
           placeholder="메시지"
