@@ -21,7 +21,7 @@ const NavBar = () => {
             </Link>
           </li>
           <li className="hover:scale-125 font-bold hover:duration-300">
-            <Link to="skills" spy={true} smooth={true} duration={500}>
+            <Link to="skill" spy={true} smooth={true} duration={500}>
               Skill
             </Link>
           </li>
@@ -49,10 +49,50 @@ const NavBar = () => {
             : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
         }
       >
-        <li className="py-6 text-3xl">Home</li>
-        <li className="py-6 text-3xl">About</li>
-        <li className="py-6 text-3xl">Projects</li>
-        <li className="py-6 text-3xl">Contact</li>
+        <li className="py-6 text-4xl">
+          <Link
+            onClick={navOnClick}
+            to="home"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            Home
+          </Link>
+        </li>
+        <li className="py-6 text-4xl">
+          <Link
+            onClick={navOnClick}
+            to="skill"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            Skills
+          </Link>
+        </li>
+        <li className="py-6 text-4xl">
+          <Link
+            onClick={navOnClick}
+            to="work"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            Work
+          </Link>
+        </li>
+        <li className="py-6 text-4xl">
+          <Link
+            onClick={navOnClick}
+            to="contact"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            Contact
+          </Link>
+        </li>
       </ul>
       <SideBar />
     </div>
