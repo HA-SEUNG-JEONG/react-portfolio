@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaBlog } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
@@ -9,15 +9,23 @@ const SideBar = () => {
         <li className="w-[10rem] h-[3.75rem] flex justify-between items-center ml-[-6.25rem] hover:ml-[-0.625rem] duration-300 bg-blue-600">
           <a
             className="flex justify-between items-center w-full text-gray-300"
-            href="/"
+            href="https://www.linkedin.com/in/%ED%95%98%EC%8A%B9-%EC%A0%95-50b831229/"
           >
             Linkedin <FaLinkedin size={30} />
+          </a>
+        </li>
+        <li className="w-[10rem] h-[3.75rem] flex justify-between items-center ml-[-6.25rem] hover:ml-[-0.625rem] duration-300 bg-gray-600">
+          <a
+            className="flex justify-between items-center w-full text-gray-300"
+            href="https://velog.io/@gktmd652"
+          >
+            Blog <FaBlog size={30} />
           </a>
         </li>
         <li className="w-[10rem] h-[3.75rem] flex justify-between items-center ml-[-6.25rem] hover:ml-[-0.625rem] duration-300 bg-[#333333]">
           <a
             className="flex justify-between items-center w-full text-gray-300"
-            href="/"
+            href="https://github.com/HA-SEUNG-JEONG"
           >
             Github <FaGithub size={30} />
           </a>
