@@ -21,7 +21,7 @@ const Work = () => {
                   Image Resize
                 </span>
                 <div className="pt-8 text-center">
-                  <a href="">
+                  <a href="https://gorgeous-liger-93f086.netlify.app/">
                     <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                       Demo
                     </button>
