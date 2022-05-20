@@ -50,6 +50,22 @@ const Skills = () => {
             />
             <p className="my-2">TYPESCRIPT</p>
           </div>
+          <div className="shadow-[#040c16] hover:scale-110 duration-500">
+            <img
+              className="mx-auto my-10"
+              src="https://skillicons.dev/icons?i=tailwindcss"
+              alt="logo"
+            />
+            <p className="my-2">TAILWIND CSS</p>
+          </div>
+          <div className="shadow-[#040c16] hover:scale-110 duration-500">
+            <img
+              className="mx-auto my-10"
+              src="https://skillicons.dev/icons?i=styledcomponents"
+              alt="logo"
+            />
+            <p className="my-2">STYLED COMPONENTS</p>
+          </div>
         </div>
       </div>
     </div>
