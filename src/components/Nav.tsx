@@ -13,7 +13,8 @@ const Nav = () => {
             to="home"
             activeClass="active"
             smooth={true}
-            spy={true}>
+            spy={true}
+            offset={-200}>
             <BiHomeAlt />
           </Link>
           <Link
