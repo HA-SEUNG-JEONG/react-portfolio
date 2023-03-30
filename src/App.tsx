@@ -3,7 +3,7 @@ import Banner from "./components/Banner";
 import Contact from "./components/Contact";
 import Header from "./components/Header";
 import Nav from "./components/Nav";
-import Work from "./components/Work";
+import Work from "./components/Project";
 
 function App() {
   return (
@@ -14,7 +14,6 @@ function App() {
       <About />
       <Work />
       <Contact />
-      <div className="h-[4000px]"></div>
     </div>
   );
 }
