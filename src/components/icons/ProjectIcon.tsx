@@ -1,7 +1,7 @@
 import { BsClipboardData } from "react-icons/bs";
 import { Link } from "react-scroll";
 
-const WorkIcon = () => {
+const ProjectIcon = () => {
   return (
     <Link
       className="cursor-pointer w-[60px] flex items-center justify-center"
@@ -14,4 +14,4 @@ const WorkIcon = () => {
   );
 };
 
-export default WorkIcon;
+export default ProjectIcon;

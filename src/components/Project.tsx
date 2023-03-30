@@ -15,7 +15,7 @@ const Work = () => {
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
             className="flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0">
-            <h2 className="h2 leading-tight">최근 프로젝트</h2>
+            <h2 className="h2 leading-tight">프로젝트</h2>
             <p className="max-w-sm mb-16">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus
               quos vel reprehenderit, consequuntur, iusto officiis accusantium
