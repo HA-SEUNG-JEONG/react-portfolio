@@ -31,12 +31,6 @@ const About = () => {
               recusandae, animi, perspiciatis veniam.
             </p>
             <div className="flex gap-6 lg:gap-x-10 mb-12"></div>
-            <div className="flex gap-x-8 items-center">
-              <button className="btn btn-lg">Contact Me</button>
-              <a href="#" className="text-gradient">
-                My PortFolio
-              </a>
-            </div>
           </motion.div>
         </div>
       </div>
