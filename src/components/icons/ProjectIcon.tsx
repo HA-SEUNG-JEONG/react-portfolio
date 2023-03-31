@@ -5,7 +5,7 @@ const ProjectIcon = () => {
   return (
     <Link
       className="cursor-pointer w-[60px] flex items-center justify-center"
-      to="work"
+      to="project"
       activeClass="active"
       smooth={true}
       spy={true}>
