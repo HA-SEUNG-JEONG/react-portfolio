@@ -1,7 +1,7 @@
 import ContactIcon from "./icons/ContactIcon";
 import HomeIcon from "./icons/HomeIcon";
-import WorkIcon from "./icons/WorkIcon";
-import AboutIcon from "./icons/AboutIcon";
+import SkillIcon from "./icons/SkillIcon";
+import ProjectIcon from "./icons/ProjectIcon";
 
 const Nav = () => {
   return (
@@ -9,8 +9,8 @@ const Nav = () => {
       <section className="container mx-auto">
         <article className="w-full bg-black/20 h-[96px] background-blur-2xl rounded-full max-w-[460px] mx-auto px-5 flex justify-between items-center text-2xl text-white/50">
           <HomeIcon />
-          <AboutIcon />
-          <WorkIcon />
+          <SkillIcon />
+          <ProjectIcon />
           <ContactIcon />
         </article>
       </section>
