@@ -1,7 +1,7 @@
-import { BiUser } from "react-icons/bi";
+import { GiSkills } from "react-icons/gi";
 import { Link } from "react-scroll";
 
-const AboutIcon = () => {
+const SkillIcon = () => {
   return (
     <Link
       className="cursor-pointer w-[60px] flex items-center justify-center"
@@ -9,9 +9,9 @@ const AboutIcon = () => {
       activeClass="active"
       smooth={true}
       spy={true}>
-      <BiUser />
+      <GiSkills />
     </Link>
   );
 };
 
-export default AboutIcon;
+export default SkillIcon;

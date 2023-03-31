@@ -1,4 +1,4 @@
-import { BsClipboardData } from "react-icons/bs";
+import { AiFillProject } from "react-icons/ai";
 import { Link } from "react-scroll";
 
 const ProjectIcon = () => {
@@ -9,7 +9,7 @@ const ProjectIcon = () => {
       activeClass="active"
       smooth={true}
       spy={true}>
-      <BsClipboardData />
+      <AiFillProject />
     </Link>
   );
 };
