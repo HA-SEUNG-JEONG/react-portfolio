@@ -3,7 +3,7 @@ import Banner from "./components/Banner";
 import Contact from "./components/Contact";
 import Header from "./components/Header";
 import Nav from "./components/Nav";
-import Work from "./components/Project";
+import Project from "./components/Project";
 
 const App = () => {
   return (
@@ -12,7 +12,7 @@ const App = () => {
       <Banner />
       <Nav />
       <Skills />
-      <Work />
+      <Project />
       <Contact />
     </section>
   );
