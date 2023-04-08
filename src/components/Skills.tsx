@@ -3,6 +3,7 @@ import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 
 import { fadeIn } from "../variant";
+import { commonProps } from "../utils/props";
 
 const Skills = () => {
   const [ref] = useInView({ threshold: 0.5 });
@@ -12,9 +13,7 @@ const Skills = () => {
         <div className="flex lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-32">
           <motion.div
             variants={fadeIn("down", 0.3)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
+            {...commonProps(0.3)}
             className="mx-auto">
             <h2 className="h2">Tech & Tools</h2>
             <section className="space-y-4">
