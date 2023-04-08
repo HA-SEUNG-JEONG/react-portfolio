@@ -6,7 +6,7 @@ const Header = () => {
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
           <Link to="home" smooth={true} duration={500}>
-            <span className="cursor-pointer font-bold text-[30px] hover:opacity-80">
+            <span className="cursor-pointer font-bold text-[30px]">
               Jeong Ha Seung
             </span>
           </Link>
