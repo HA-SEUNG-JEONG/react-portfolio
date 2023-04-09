@@ -3,11 +3,29 @@ import { fadeIn } from "../variant";
 import { commonProps } from "../utils/props";
 import FormInput from "./contact/FormInput";
 import MessageTextArea from "./contact/MessageTextArea";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
 
 const Contact = () => {
-  const handleButtonClick = () => {
-    window.location.href = "mailto:gktmd653@gmail.com";
+  const formRef = useRef<HTMLFormElement | null>(null);
+
+  const sendEmail = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    try {
+      const result = await emailjs.sendForm(
+        process.env.REACT_APP_YOUR_SERVICE_ID || "service_35R2z@gri",
+        process.env.REACT_APP_YOUR_TEMPLATE_ID || "template_f93hr2r4@",
+        formRef.current || "",
+        process.env.REACT_APP_YOUR_PUBLIC_KEY
+      );
+      toast.success(result.text);
+    } catch (error) {
+      if (error instanceof Error) toast.error(error.message);
+    }
   };
+
   return (
     <section className="py-16 lg:section" id="contact">
       <div className="container mx-auto">
@@ -16,15 +34,15 @@ const Contact = () => {
         </h3>
         <div className="flex flex-col lg:flex-row">
           <motion.form
+            ref={formRef}
+            onSubmit={sendEmail}
             variants={fadeIn("left", 0.2)}
             {...commonProps(0.3)}
             className="flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-center justify-center">
-            <FormInput placeholder="Email" type="text" />
-            <FormInput placeholder="Name" type="text" />
-            <MessageTextArea placeholder="Message" />
-            <button
-              className="btn btn-lg flex items-center justify-center"
-              onClick={handleButtonClick}>
+            <FormInput placeholder="Email" type="text" name="user_email" />
+            <FormInput placeholder="Name" type="text" name="user_name" />
+            <MessageTextArea placeholder="Message" name="message" />
+            <button className="btn btn-lg flex items-center justify-center">
               Send Message
             </button>
           </motion.form>
