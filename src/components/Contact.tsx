@@ -33,7 +33,7 @@ const Contact = () => {
   return (
     <section className="py-16 lg:section" id="contact">
       <div className="container mx-auto">
-        <h3 className="flex justify-center items-center mb-10 font-bold text-[30px]">
+        <h3 className="flex justify-center items-center mb-10 font-bold text-[30px] select-none">
           Contact Me
         </h3>
         <div className="flex flex-col lg:flex-row">
