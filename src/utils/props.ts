@@ -6,5 +6,5 @@ export const imgClassName = "w-[190px] h-[170px] mr-4";
 export const commonProps = (amount: number) => ({
   initial: "hidden",
   whileInView: "show",
-  viewport: { once: false, amount: 0.3 },
+  viewport: { once: false, amount },
 });
