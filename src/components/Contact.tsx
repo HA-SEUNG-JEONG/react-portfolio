@@ -18,7 +18,7 @@ const Contact = () => {
         "service_995hi6p",
         "template_u7u0iua",
         formRef.current ?? "",
-        process.env.REACT_APP_YOUR_PUBLIC_KEY
+        "mtmSRDlwWwn2DKpGj"
       );
       toast.success(result.text);
     } catch (error) {
