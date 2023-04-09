@@ -8,13 +8,14 @@ import {
 } from "../utils/props";
 import { fadeIn } from "../variant";
 import { motion } from "framer-motion";
+import ProjectName from "./project/ProjectName";
+import ProjectDescription from "./project/ProjectDescription";
 
 const Project = () => {
   return (
     <section className="section" id="project">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row gap-x-10">
-          {/* text */}
           <motion.div
             variants={fadeIn("right", 0.5)}
             {...commonProps(0.3)}
@@ -26,14 +27,14 @@ const Project = () => {
               className="flex gap-y-10">
               <img className={imgClassName} src={Img1} alt="swap" />
               <p className={projectContainerClassName}>
-                <span className="font-bold">SWAP</span>
-                <span className="mb-3">굿즈 교환 플랫폼 프로젝트</span>
+                <ProjectName name="SWAP" />
+                <ProjectDescription description="굿즈 교환 플랫폼 프로젝트" />
                 <span className={implementClasName}>구현 내용</span>
                 <span className="font-bold">
                   <a
                     href="https://haseungdev.vercel.app/React/%EB%8B%89%EB%84%A4%EC%9E%84%20%EC%9E%90%EC%9D%8C,%EB%AA%A8%EC%9D%8C%20%EC%B2%98%EB%A6%AC%20%EB%B0%8F%20%EB%8B%89%EB%84%A4%EC%9E%84%20%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0/"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noreferrer noopener"
                     className="hover:opacity-70">
                     React-hook-form을 이용한 닉네임 유효성 검사
                   </a>
@@ -50,10 +51,8 @@ const Project = () => {
               className="flex gap-y-10">
               <img className={imgClassName} src={Img2} alt="morakmorak" />
               <p className={projectContainerClassName}>
-                <span className="font-bold">Morak Morak</span>
-                <span className="mb-3">
-                  개발 입문자들을 위한 따뜻한 개발자 커뮤니티
-                </span>
+                <ProjectName name="Morak Morak" />
+                <ProjectDescription description="개발 입문자들을 위한 따뜻한 개발자 커뮤니티" />
                 <span className={implementClasName}>구현 내용</span>
                 <li>
                   회원가입 페이지에서 닉네임이나 비밀번호 등의 입력값이 유효한지
@@ -67,7 +66,6 @@ const Project = () => {
               </p>
             </motion.div>
           </motion.div>
-          {/* image */}
         </div>
       </div>
     </section>
