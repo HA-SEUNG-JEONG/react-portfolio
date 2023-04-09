@@ -15,9 +15,9 @@ const Contact = () => {
 
     try {
       const result = await emailjs.sendForm(
-        process.env.REACT_APP_YOUR_SERVICE_ID || "service_35R2z@gri",
-        process.env.REACT_APP_YOUR_TEMPLATE_ID || "template_f93hr2r4@",
-        formRef.current || "",
+        "service_995hi6p",
+        "template_u7u0iua",
+        formRef.current ?? "",
         process.env.REACT_APP_YOUR_PUBLIC_KEY
       );
       toast.success(result.text);
