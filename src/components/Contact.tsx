@@ -15,10 +15,10 @@ const Contact = () => {
 
     try {
       const result = await emailjs.sendForm(
-        "service_995hi6p",
-        "template_u7u0iua",
+        process.env.REACT_APP_YOUR_SERVICE_ID || "",
+        process.env.REACT_APP_YOUR_TEMPLATE_ID || "",
         formRef.current ?? "",
-        "v3pcNfSG39fas833H"
+        process.env.REACT_APP_YOUR_PUBLIC_KEY || ""
       );
       toast.success(result.text);
     } catch (error) {
