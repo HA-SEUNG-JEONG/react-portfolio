@@ -42,7 +42,7 @@ const Contact = () => {
           <motion.form
             ref={formRef}
             onSubmit={sendEmail}
-            variants={fadeIn("left", 0.2)}
+            variants={fadeIn("right", 0.2)}
             {...commonProps(0.3)}
             className="flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-center justify-center">
             <FormInput placeholder="Email" type="text" name="user_email" />
