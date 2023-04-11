@@ -36,12 +36,12 @@ const Project = () => {
                     target="_blank"
                     rel="noreferrer noopener"
                     className="hover:opacity-70">
-                    React-hook-form을 이용한 닉네임 유효성 검사
+                    React-hook-form을 이용하여 닉네임 실시간 검증
                   </a>
                 </span>
                 <li>
-                  입력된 닉네임 값을 실시간으로 감지하여 오류가 있을 시
-                  즉각적으로 오류메시지를 표시할 수 있도록 구현
+                  입력된 닉네임 값을 실시간으로 감지하여 오류 발생 시 즉각적으로
+                  오류메시지를 표시하도록 구현
                 </li>
               </p>
             </motion.div>
@@ -55,13 +55,12 @@ const Project = () => {
                 <ProjectDescription description="개발 입문자들을 위한 따뜻한 개발자 커뮤니티" />
                 <span className={implementClasName}>구현 내용</span>
                 <li>
-                  회원가입 페이지에서 닉네임이나 비밀번호 등의 입력값이 유효한지
-                  실시간으로 검증하여 유효하지 않은 경우 오류 메시지를 즉시
-                  표시하도록 구현
+                  회원가입 페이지에서 입력값 유효성 실시간 검증 오류 메시지를
+                  즉각적으로 표시하도록 구현
                 </li>
                 <li>
-                  react-toastify 라이브러리를 활용하여 사용자들이 프로세스의
-                  성공/실패 여부를 쉽게 파악할 수 있는 알림창 구현
+                  react-toastify 라이브러리를 활용하여 사용자 친화적인 프로세스
+                  결과를 알리는 알림창 구현
                 </li>
               </p>
             </motion.div>
