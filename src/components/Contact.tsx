@@ -13,21 +13,23 @@ const Contact = () => {
   const sendEmail = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        process.env.REACT_APP_YOUR_SERVICE_ID!,
-        process.env.REACT_APP_YOUR_TEMPLATE_ID!,
-        formRef.current!,
-        process.env.REACT_APP_YOUR_PUBLIC_KEY!
-      )
-      .then(
-        (result) => {
-          toast.success(result.text);
-        },
-        (error) => {
-          if (error instanceof Error) toast.error(error.message);
-        }
-      );
+    if (formRef.current) {
+      emailjs
+        .sendForm(
+          process.env.REACT_APP_YOUR_SERVICE_ID || "",
+          process.env.REACT_APP_YOUR_TEMPLATE_ID || "",
+          formRef.current,
+          process.env.REACT_APP_YOUR_PUBLIC_KEY
+        )
+        .then(
+          (result) => {
+            toast.success(result.text);
+          },
+          (error) => {
+            if (error instanceof Error) toast.error(error.message);
+          }
+        );
+    }
   };
 
   return (
