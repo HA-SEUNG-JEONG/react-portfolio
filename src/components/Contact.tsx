@@ -13,22 +13,22 @@ const Contact = () => {
   const sendEmail = async (e: React.FormEvent) => {
     e.preventDefault();
 
+    const serviceId = process.env.REACT_APP_YOUR_SERVICE_ID || "";
+    const templateId = process.env.REACT_APP_YOUR_TEMPLATE_ID || "";
+    const publicKey = process.env.REACT_APP_YOUR_PUBLIC_KEY;
+
     if (formRef.current) {
-      emailjs
-        .sendForm(
-          process.env.REACT_APP_YOUR_SERVICE_ID || "",
-          process.env.REACT_APP_YOUR_TEMPLATE_ID || "",
+      try {
+        const result = await emailjs.sendForm(
+          serviceId,
+          templateId,
           formRef.current,
-          process.env.REACT_APP_YOUR_PUBLIC_KEY
-        )
-        .then(
-          (result) => {
-            toast.success(result.text);
-          },
-          (error) => {
-            if (error instanceof Error) toast.error(error.message);
-          }
+          publicKey
         );
+        toast.success(result.text);
+      } catch (error) {
+        if (error instanceof Error) toast.error(error.message);
+      }
     }
   };
 
