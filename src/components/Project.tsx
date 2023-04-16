@@ -36,7 +36,10 @@ const Project = () => {
                     target="_blank"
                     rel="noreferrer noopener"
                     className="hover:opacity-70">
-                    React-hook-form을 이용하여 닉네임 실시간 검증
+                    <span className="font-bold text-blue-400">
+                      React-hook-form
+                    </span>
+                    을 이용하여 닉네임 실시간 검증
                   </a>
                 </span>
                 <li>
@@ -59,8 +62,11 @@ const Project = () => {
                   즉각적으로 표시하도록 구현
                 </li>
                 <li>
-                  react-toastify 라이브러리를 활용하여 사용자 친화적인 프로세스
-                  결과를 알리는 알림창 구현
+                  <span className="font-bold text-blue-400">
+                    react-toastify
+                  </span>{" "}
+                  라이브러리를 활용하여 사용자 친화적인 프로세스 결과를 알리는
+                  알림창 구현
                 </li>
               </p>
             </motion.div>
