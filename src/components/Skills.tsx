@@ -16,10 +16,10 @@ const Skills = () => {
             {...commonProps(0.3)}
             className="mx-auto">
             <h2 className="h2">Tech & Tools</h2>
-            <section className="space-y-4">
-              <article className="flex justify-center">
+            <section className="space-y-6">
+              <article className="flex justify-center gap-x-2">
                 <svg
-                  className="w-16 h-16"
+                  className="w-24 h-24"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 128 128">
                   <path
@@ -40,7 +40,7 @@ const Skills = () => {
                   />
                 </svg>
                 <svg
-                  className="w-16 h-16"
+                  className="w-24 h-24"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 128 128">
                   <path
@@ -69,7 +69,7 @@ const Skills = () => {
                   />
                 </svg>
                 <svg
-                  className="w-16 h-16"
+                  className="w-24 h-24"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 128 128">
                   <path
@@ -82,9 +82,9 @@ const Skills = () => {
                   />
                 </svg>
               </article>
-              <article className="flex justify-center">
+              <article className="flex justify-center gap-x-2">
                 <svg
-                  className="w-16 h-16"
+                  className="w-24 h-24"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 128 128">
                   <g fill="#61DAFB">
@@ -93,7 +93,7 @@ const Skills = () => {
                   </g>
                 </svg>
                 <svg
-                  className="w-16 h-16"
+                  className="w-24 h-24"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 128 128">
                   <path fill="#fff" d="M22.67 47h99.67v73.67H22.67z" />
@@ -104,7 +104,7 @@ const Skills = () => {
                   />
                 </svg>
                 <svg
-                  className="w-16 h-16"
+                  className="w-24 h-24"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 128 128">
                   <path
