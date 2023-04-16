@@ -8,8 +8,8 @@ const Profile = () => {
       variants={fadeIn("down", 0.3)}
       initial="hidden"
       whileInView={"show"}
-      className="hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px] ">
-      <img src={profiles} alt="profile" />
+      className="hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]">
+      <img className="w-72 h-full ml-48" src={profiles} alt="profile" />
     </motion.div>
   );
 };
