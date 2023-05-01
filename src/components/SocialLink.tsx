@@ -11,7 +11,7 @@ const SocialLink = () => {
       className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0">
       <a
         href="https://github.com/HA-SEUNG-JEONG"
-        className="hover:opacity-60 text-[#9DA7B3]">
+        className="hover:opacity-60 text-white">
         <FaGithub size={36} />
       </a>
       <a
