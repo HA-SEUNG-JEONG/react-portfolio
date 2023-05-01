@@ -1,4 +1,5 @@
 import { Link } from "react-scroll";
+import HomeLogo from "../assets/dev-jeans.png";
 
 const Header = () => {
   return (
@@ -6,9 +7,13 @@ const Header = () => {
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
           <Link to="home" smooth={true}>
-            <span className="cursor-pointer font-bold text-[25px]">
-              Jeong Ha Seung
-            </span>
+            <img
+              className="rounded-md cursor-pointer"
+              src={HomeLogo}
+              alt="logo"
+              width="56"
+              height="56"
+            />
           </Link>
           <Link to="contact" smooth={true}>
             <button className="btn btn-lg">
