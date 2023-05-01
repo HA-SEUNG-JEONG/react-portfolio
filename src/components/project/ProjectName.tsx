@@ -3,7 +3,7 @@ interface NameProps {
 }
 
 const ProjectName = ({ name }: NameProps) => {
-  return <span className="font-bold">{name}</span>;
+  return <h1 className="font-bold">{name}</h1>;
 };
 
 export default ProjectName;

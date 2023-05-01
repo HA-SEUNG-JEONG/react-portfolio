@@ -3,7 +3,7 @@ interface DescriptionProps {
 }
 
 const ProjectDescription = ({ description }: DescriptionProps) => {
-  return <span className="mb-3">{description}</span>;
+  return <p className="mb-3">{description}</p>;
 };
 
 export default ProjectDescription;
