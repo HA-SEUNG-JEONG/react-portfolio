@@ -21,19 +21,16 @@
     @apply font-secondary text-lg leading-8 text-white;
   }
   .h2 {
-    @apply font-primary text-[32px] mb-6 tracking-[10%] font-bold flex justify-center select-none;
-  }
-  .h3 {
-    @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
+    @apply flex justify-center items-center mb-10 font-bold text-[30px] select-none;
   }
   .btn {
-    @apply rounded-full font-primary text-white font-medium;
+    @apply rounded-full text-white font-medium;
   }
   .btn-sm {
     @apply h-[48px] px-6 text-sm;
   }
   .btn-lg {
-    @apply h-[56px] px-10 text-base;
+    @apply h-[56px] px-10 font-bold text-base;
   }
   .btn-link {
     @apply text-base;
