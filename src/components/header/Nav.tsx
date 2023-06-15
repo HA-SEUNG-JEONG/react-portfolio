@@ -1,7 +1,7 @@
-import ContactIcon from "./icons/ContactIcon";
-import HomeIcon from "./icons/HomeIcon";
-import SkillIcon from "./icons/SkillIcon";
-import ProjectIcon from "./icons/ProjectIcon";
+import ContactIcon from "../icons/ContactIcon";
+import HomeIcon from "../icons/HomeIcon";
+import SkillIcon from "../icons/SkillIcon";
+import ProjectIcon from "../icons/ProjectIcon";
 
 const Nav = () => {
   return (
