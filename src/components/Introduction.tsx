@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import { TypeAnimation } from "react-type-animation";
 import { fadeIn } from "../variant";
 import { commonProps } from "../utils/props";
+import TypingIntroduction from "./TypingIntroduction";
 
 const Introduction = () => {
   return (
@@ -14,13 +14,7 @@ const Introduction = () => {
           유저경험을 중시하는
           <br />
         </span>
-        <TypeAnimation
-          sequence={["프론트엔드 개발자 정하승입니다.", 2000]}
-          speed={10}
-          className="text-blue-600"
-          wrapper="span"
-          repeat={Infinity}
-        />
+        <TypingIntroduction />
       </motion.div>
       <motion.p
         variants={fadeIn("up", 0.3)}
