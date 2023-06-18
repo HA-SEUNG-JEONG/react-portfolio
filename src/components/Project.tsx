@@ -42,11 +42,12 @@ const Project = () => {
                         <strong className="text-blue-400">
                           react-hook-form
                         </strong>
-                        을 이용하여 닉네임 실시간 검증
+                        <span>을 이용하여 닉네임 실시간 검증</span>
                       </a>
                     </li>
                     <li>
                       입력된 닉네임 값을 실시간으로 감지하여 오류 발생 시
+                      <br />
                       즉각적으로 오류메시지를 표시하도록 구현
                     </li>
                     <h3 className="font-bold">
@@ -58,7 +59,7 @@ const Project = () => {
                         target="_blank"
                         rel="noreferrer noopener"
                         className="hover:opacity-70 underline">
-                        <strong className="text-blue-400">Firebase </strong>를
+                        <strong className="text-blue-400">Firebase</strong>를
                         이용하여 이미지 업로드와 삭제 구현
                       </a>
                     </li>
@@ -83,12 +84,12 @@ const Project = () => {
                   </li>
                   <li>
                     <strong className="text-blue-400">react-hook-form</strong>을
-                    이용하여 회원가입 페이지에서 닉네임,이메일,비밀번호에 대한
+                    이용하여 회원가입 폼에서 닉네임, 이메일, 비밀번호에 대한
                     유효성 실시간 검증 및 오류 메시지를 즉시 표시하는 기능 구현
                   </li>
                   <li>
-                    회원가입 페이지에서 사용자가 입력한 새로운 비밀번호를
-                    확인하기 위해, 클라이언트 측에서 비밀번호 재확인 기능 구현
+                    사용자가 입력한 새로운 비밀번호를 확인하기 위해, 클라이언트
+                    측에서 비밀번호를 재확인하는 기능 구현
                   </li>
                 </ul>
               </article>
