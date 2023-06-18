@@ -76,6 +76,7 @@ const Project = () => {
                 <ProjectName name="Morak Morak" />
                 <ProjectDescription description="개발 입문자들을 위한 따뜻한 개발자 커뮤니티" />
                 <h2 className={implementClasName}>구현 내용</h2>
+                <h3 className="font-bold">1. 로그인, 회원가입 폼 제작</h3>
                 <ul className="space-y-3">
                   <li>
                     <strong className="text-blue-400">react-toastify</strong>{" "}
@@ -90,6 +91,14 @@ const Project = () => {
                   <li>
                     사용자가 입력한 새로운 비밀번호를 확인하기 위해, 클라이언트
                     측에서 비밀번호를 재확인하는 기능 구현
+                  </li>
+                  <h3 className="font-bold">2. 글 작성 기능 구현</h3>
+                  <li className="leading-tight">
+                    React-quill 라이브러리를 이용하여 글 작성 기능 구현, 이미지
+                    삽입 및 리사이징 구현
+                  </li>
+                  <li className="leading-tight">
+                    제목,내용,태그에 대한 validation 적용
                   </li>
                 </ul>
               </article>
