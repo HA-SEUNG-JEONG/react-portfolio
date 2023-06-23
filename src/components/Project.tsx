@@ -8,7 +8,7 @@ import {
 } from "../utils/props";
 import { fadeIn } from "../variant";
 import { motion } from "framer-motion";
-import ProjectName from "./project/ProjectName";
+import ProjectNameAndPercent from "./project/ProjectNameAndPercent";
 import ProjectDescription from "./project/ProjectDescription";
 
 const Project = () => {
@@ -27,7 +27,7 @@ const Project = () => {
               className="flex gap-y-10 border-2 border-gray-500 p-4 rounded-lg">
               <img className={imgClassName} src={Img1} alt="swap" />
               <p className={projectContainerClassName}>
-                <ProjectName name="SWAP" />
+                <ProjectNameAndPercent name="SWAP" percent={30} />
                 <ProjectDescription description="굿즈 교환 플랫폼 프로젝트" />
                 <span className={implementClasName}>구현 내용</span>
                 <h3 className="font-bold">1. 마이페이지 컴포넌트 제작</h3>
@@ -73,7 +73,7 @@ const Project = () => {
               className="flex gap-y-10 border-2 border-gray-500 p-4 rounded-lg">
               <img className={imgClassName} src={Img2} alt="morakmorak" />
               <article className={projectContainerClassName}>
-                <ProjectName name="Morak Morak" />
+                <ProjectNameAndPercent name="Morak Morak" percent={50} />
                 <ProjectDescription description="개발 입문자들을 위한 따뜻한 개발자 커뮤니티" />
                 <h2 className={implementClasName}>구현 내용</h2>
                 <h3 className="font-bold">1. 로그인, 회원가입 폼 제작</h3>
