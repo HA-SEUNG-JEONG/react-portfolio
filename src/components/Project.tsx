@@ -13,96 +13,129 @@ import ProjectDescription from "./project/ProjectDescription";
 
 const Project = () => {
   return (
-    <section className="section" id="project">
-      <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row gap-x-10">
+    <section className="section text-gray-900" id="project">
+      <div className="mx-auto">
+        <div className="flex flex-col justify-center lg:flex-row gap-x-10">
           <motion.div
             variants={fadeIn("right", 0.5)}
             {...commonProps(0.3)}
-            className="flex-1 flex flex-col gap-y-6 mb-10 lg:mb-0">
+            className="flex-1 flex flex-col gap-y-6 lg:mb-0">
             <h2 className="h2 leading-tight">Project</h2>
-            <motion.div
-              variants={fadeIn("left", 0.2)}
-              {...commonProps(0.3)}
-              className="flex gap-y-10 border-2 border-gray-500 p-4 rounded-lg">
-              <img className={imgClassName} src={Img1} alt="swap" />
-              <p className={projectContainerClassName}>
-                <ProjectNameAndPercent name="SWAP" percent={30} />
-                <ProjectDescription description="굿즈 교환 플랫폼 프로젝트" />
-                <span className={implementClasName}>구현 내용</span>
-                <h3 className="font-bold">1. 마이페이지 컴포넌트 제작</h3>
-                <section>
+            <div className="grid grid-cols-2 gap-6">
+              {" "}
+              <motion.div
+                variants={fadeIn("left", 0.2)}
+                {...commonProps(0.3)}
+                className="flex gap-y-10 border-2 border-gray-500 p-4 rounded-lg">
+                <img className={imgClassName} src="" alt="" />
+                <section className={projectContainerClassName}>
+                  <ProjectNameAndPercent
+                    link="https://find-different-color-beryl.vercel.app/"
+                    name="다른 색깔 찾기 게임"
+                    percent={100}
+                  />
+                  <ProjectDescription description="상태관리 라이브러리 없이 다른 색깔 찾기" />
+                  <span className={implementClasName}>구현 내용</span>
+                  <h3 className="font-bold">1. </h3>
+                  {/* <section>
+                    <ul className="space-y-3">
+                      <li className="leading-tight"></li>
+                    </ul>
+                  </section> */}
+                </section>
+              </motion.div>
+              <motion.div
+                variants={fadeIn("left", 0.2)}
+                {...commonProps(0.3)}
+                className="flex gap-y-10 border-2 border-gray-500 p-4 rounded-lg">
+                <img className={imgClassName} src={Img1} alt="swap" />
+                <section className={projectContainerClassName}>
+                  <ProjectNameAndPercent
+                    link="https://morakmorak.vercel.app/"
+                    name="morakmorak"
+                    percent={30}
+                  />
+                  <ProjectDescription description="굿즈 교환 플랫폼 프로젝트" />
+                  <span className={implementClasName}>구현 내용</span>
+                  <h3 className="font-bold">1. 마이페이지 컴포넌트 제작</h3>
+                  <section>
+                    <ul className="space-y-3">
+                      <li className="leading-tight">
+                        <a
+                          href="https://haseungdev.vercel.app/React/%EB%8B%89%EB%84%A4%EC%9E%84%20%EC%9E%90%EC%9D%8C,%EB%AA%A8%EC%9D%8C%20%EC%B2%98%EB%A6%AC%20%EB%B0%8F%20%EB%8B%89%EB%84%A4%EC%9E%84%20%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0/"
+                          target="_blank"
+                          rel="noreferrer noopener"
+                          className="hover:opacity-70 underline underline-offset-4">
+                          <strong className="text-blue-400">
+                            react-hook-form
+                          </strong>
+                          <span>을 이용하여 닉네임 실시간 검증</span>
+                        </a>
+                      </li>
+                      <li>
+                        입력된 닉네임 값을 실시간으로 감지하여 오류 발생 시
+                        <br />
+                        즉각적으로 오류메시지를 표시하도록 구현
+                      </li>
+                      <h3 className="font-bold">
+                        2. 이미지 프리뷰, 업로드 및 삭제 구현
+                      </h3>
+                      <li className="leading-tight">
+                        <a
+                          href="https://haseungdev.vercel.app/%EA%B8%80%EB%98%90/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%9E%91%EC%97%85(%EC%9D%B4%EB%9D%BC%20%EC%93%B0%EA%B3%A0%20%EC%82%BD%EC%A7%88%EA%B8%B0..)/"
+                          target="_blank"
+                          rel="noreferrer noopener"
+                          className="hover:opacity-70 underline underline-offset-4">
+                          <strong className="text-blue-400">Firebase</strong>를
+                          이용하여 이미지 업로드와 삭제 구현
+                        </a>
+                      </li>
+                    </ul>
+                  </section>
+                </section>
+              </motion.div>
+              <motion.div
+                variants={fadeIn("left", 0.2)}
+                {...commonProps(0.3)}
+                className="flex gap-y-10 border-2 border-gray-500 p-4 rounded-lg">
+                <img className={imgClassName} src={Img2} alt="morakmorak" />
+                <article className={projectContainerClassName}>
+                  <ProjectNameAndPercent
+                    link="https://morakmorak.vercel.app/"
+                    name="Morak Morak"
+                    percent={50}
+                  />
+                  <ProjectDescription description="개발 입문자들을 위한 따뜻한 개발자 커뮤니티" />
+                  <h2 className={implementClasName}>구현 내용</h2>
+                  <h3 className="font-bold">1. 로그인, 회원가입 폼 제작</h3>
                   <ul className="space-y-3">
-                    <li className="leading-tight">
-                      <a
-                        href="https://haseungdev.vercel.app/React/%EB%8B%89%EB%84%A4%EC%9E%84%20%EC%9E%90%EC%9D%8C,%EB%AA%A8%EC%9D%8C%20%EC%B2%98%EB%A6%AC%20%EB%B0%8F%20%EB%8B%89%EB%84%A4%EC%9E%84%20%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0/"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        className="hover:opacity-70 underline">
-                        <strong className="text-blue-400">
-                          react-hook-form
-                        </strong>
-                        <span>을 이용하여 닉네임 실시간 검증</span>
-                      </a>
+                    <li>
+                      <strong className="text-blue-400">react-toastify</strong>{" "}
+                      라이브러리를 사용하여 로그인, 회원가입, 글 작성 완료 등의
+                      프로세스를 알리는 알림창 구현
                     </li>
                     <li>
-                      입력된 닉네임 값을 실시간으로 감지하여 오류 발생 시
-                      <br />
-                      즉각적으로 오류메시지를 표시하도록 구현
+                      <strong className="text-blue-400">react-hook-form</strong>
+                      을 이용하여 회원가입 폼에서 닉네임, 이메일, 비밀번호에
+                      대한 유효성 실시간 검증 및 오류 메시지를 즉시 표시하는
+                      기능 구현
                     </li>
-                    <h3 className="font-bold">
-                      2. 이미지 프리뷰, 업로드 및 삭제 구현
-                    </h3>
+                    <li>
+                      사용자가 입력한 새로운 비밀번호를 확인하기 위해,
+                      클라이언트 측에서 비밀번호를 재확인하는 기능 구현
+                    </li>
+                    <h3 className="font-bold">2. 글 작성 기능 구현</h3>
                     <li className="leading-tight">
-                      <a
-                        href="https://haseungdev.vercel.app/%EA%B8%80%EB%98%90/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%9E%91%EC%97%85(%EC%9D%B4%EB%9D%BC%20%EC%93%B0%EA%B3%A0%20%EC%82%BD%EC%A7%88%EA%B8%B0..)/"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        className="hover:opacity-70 underline">
-                        <strong className="text-blue-400">Firebase</strong>를
-                        이용하여 이미지 업로드와 삭제 구현
-                      </a>
+                      React-quill 라이브러리를 이용하여 글 작성 기능 구현,
+                      이미지 삽입 및 리사이징 구현
+                    </li>
+                    <li className="leading-tight">
+                      제목,내용,태그에 대한 validation 적용
                     </li>
                   </ul>
-                </section>
-              </p>
-            </motion.div>
-            <motion.div
-              variants={fadeIn("left", 0.2)}
-              {...commonProps(0.3)}
-              className="flex gap-y-10 border-2 border-gray-500 p-4 rounded-lg">
-              <img className={imgClassName} src={Img2} alt="morakmorak" />
-              <article className={projectContainerClassName}>
-                <ProjectNameAndPercent name="Morak Morak" percent={50} />
-                <ProjectDescription description="개발 입문자들을 위한 따뜻한 개발자 커뮤니티" />
-                <h2 className={implementClasName}>구현 내용</h2>
-                <h3 className="font-bold">1. 로그인, 회원가입 폼 제작</h3>
-                <ul className="space-y-3">
-                  <li>
-                    <strong className="text-blue-400">react-toastify</strong>{" "}
-                    라이브러리를 사용하여 로그인, 회원가입, 글 작성 완료 등의
-                    프로세스를 알리는 알림창 구현
-                  </li>
-                  <li>
-                    <strong className="text-blue-400">react-hook-form</strong>을
-                    이용하여 회원가입 폼에서 닉네임, 이메일, 비밀번호에 대한
-                    유효성 실시간 검증 및 오류 메시지를 즉시 표시하는 기능 구현
-                  </li>
-                  <li>
-                    사용자가 입력한 새로운 비밀번호를 확인하기 위해, 클라이언트
-                    측에서 비밀번호를 재확인하는 기능 구현
-                  </li>
-                  <h3 className="font-bold">2. 글 작성 기능 구현</h3>
-                  <li className="leading-tight">
-                    React-quill 라이브러리를 이용하여 글 작성 기능 구현, 이미지
-                    삽입 및 리사이징 구현
-                  </li>
-                  <li className="leading-tight">
-                    제목,내용,태그에 대한 validation 적용
-                  </li>
-                </ul>
-              </article>
-            </motion.div>
+                </article>
+              </motion.div>
+            </div>
           </motion.div>
         </div>
       </div>
