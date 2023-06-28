@@ -2,12 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-.btn {
-  box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
-}
-
 .btn:hover {
-  background-color: rgb(121, 23, 201);
+  background-color: #88abdb;
 }
 
 .active {
@@ -21,10 +17,10 @@
     @apply font-secondary text-lg leading-8 text-white;
   }
   .h2 {
-    @apply flex justify-center items-center mb-10 font-bold text-[30px] select-none text-gray-900;
+    @apply flex justify-center items-center font-bold text-[30px] select-none text-gray-900;
   }
   .btn {
-    @apply rounded-full text-white font-medium;
+    @apply rounded-full text-white font-medium bg-[#648ec9];
   }
   .btn-sm {
     @apply h-[48px] px-6 text-sm;

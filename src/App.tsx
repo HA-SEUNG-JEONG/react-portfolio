@@ -9,7 +9,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 const App = () => {
   return (
-    <section className="bg-site bg-no-repeat bg-cover overflow-hidden">
+    <section className="bg-[#e2e2f1] bg-no-repeat bg-cover overflow-hidden">
       <ToastContainer theme="colored" autoClose={3000} position="top-center" />
       <Header />
       <Banner />

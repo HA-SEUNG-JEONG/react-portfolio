@@ -33,7 +33,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="py-16 lg:section" id="contact">
+    <section className="py-16 lg:section text-gray-900 mt-48" id="contact">
       <div className="container mx-auto">
         <h3 className="flex justify-center items-center mb-10 font-bold text-[30px] select-none">
           Contact Me
@@ -44,7 +44,7 @@ const Contact = () => {
             onSubmit={sendEmail}
             variants={fadeIn("right", 0.2)}
             {...commonProps(0.3)}
-            className="flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-center justify-center">
+            className="flex-1 border border-gray-900 rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-center justify-center">
             <FormInput placeholder="Email" type="text" name="user_email" />
             <FormInput placeholder="Name" type="text" name="user_name" />
             <MessageTextArea placeholder="Message" name="message" />

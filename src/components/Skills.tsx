@@ -15,8 +15,8 @@ const Skills = () => {
             variants={fadeIn("down", 0.3)}
             {...commonProps(0.3)}
             className="mx-auto">
-            <h2 className="h2">Tech & Tools</h2>
-            <section className="space-y-6">
+            <h2 className="h2 mb-10">Tech & Tools</h2>
+            <section className="space-y-8 mb-48">
               <article className="flex justify-center gap-x-2">
                 <svg
                   className="w-24 h-24"
