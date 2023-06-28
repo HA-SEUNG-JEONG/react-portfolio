@@ -8,7 +8,7 @@ export interface FormInputProps {
 const FormInput = ({ placeholder, type, name }: FormInputProps) => {
   return (
     <input
-      className="bg-transparent border-b py-3 outline-none w-full focus:border-gray-500 transition-all"
+      className="bg-transparent placeholder:text-gray-900 border-b border-gray-900 py-3 outline-none w-full focus:border-gray-500 transition-all"
       placeholder={placeholder}
       type={type}
       name={name}
