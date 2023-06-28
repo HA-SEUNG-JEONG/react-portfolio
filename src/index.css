@@ -21,7 +21,7 @@
     @apply font-secondary text-lg leading-8 text-white;
   }
   .h2 {
-    @apply flex justify-center items-center mb-10 font-bold text-[30px] select-none;
+    @apply flex justify-center items-center mb-10 font-bold text-[30px] select-none text-gray-900;
   }
   .btn {
     @apply rounded-full text-white font-medium;
