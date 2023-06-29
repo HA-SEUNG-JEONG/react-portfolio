@@ -1,5 +1,6 @@
 import Img1 from "../assets/main_logo.png";
 import Img2 from "../assets/morakcover.png";
+import Img3 from "../assets/find-color.jpg";
 import {
   commonProps,
   imgClassName,
@@ -13,7 +14,7 @@ import ProjectDescription from "./project/ProjectDescription";
 
 const Project = () => {
   return (
-    <section className="section text-gray-900" id="project">
+    <section className="flex text-gray-900" id="project">
       <div className="mx-auto">
         <div className="flex flex-col justify-center lg:flex-row gap-x-10">
           <motion.div
@@ -27,37 +28,18 @@ const Project = () => {
                 variants={fadeIn("left", 0.2)}
                 {...commonProps(0.3)}
                 className="flex gap-y-10 border-2 border-gray-500 p-4 rounded-lg">
-                <img className={imgClassName} src="" alt="" />
-                <section className={projectContainerClassName}>
-                  <ProjectNameAndPercent
-                    link="https://find-different-color-beryl.vercel.app/"
-                    name="다른 색깔 찾기 게임"
-                    percent={100}
-                  />
-                  <ProjectDescription description="상태관리 라이브러리 없이 다른 색깔 찾기" />
-                  <span className={implementClasName}>구현 내용</span>
-                  <h3 className="font-bold">1. </h3>
-                  {/* <section>
-                    <ul className="space-y-3">
-                      <li className="leading-tight"></li>
-                    </ul>
-                  </section> */}
-                </section>
-              </motion.div>
-              <motion.div
-                variants={fadeIn("left", 0.2)}
-                {...commonProps(0.3)}
-                className="flex gap-y-10 border-2 border-gray-500 p-4 rounded-lg">
                 <img className={imgClassName} src={Img1} alt="swap" />
                 <section className={projectContainerClassName}>
                   <ProjectNameAndPercent
                     link="https://morakmorak.vercel.app/"
-                    name="morakmorak"
+                    name="MorakMorak"
                     percent={30}
                   />
                   <ProjectDescription description="굿즈 교환 플랫폼 프로젝트" />
                   <span className={implementClasName}>구현 내용</span>
-                  <h3 className="font-bold">1. 마이페이지 컴포넌트 제작</h3>
+                  <h3 className="font-bold mb-2">
+                    1. 마이페이지 컴포넌트 제작
+                  </h3>
                   <section>
                     <ul className="space-y-3">
                       <li className="leading-tight">
@@ -66,10 +48,9 @@ const Project = () => {
                           target="_blank"
                           rel="noreferrer noopener"
                           className="hover:opacity-70 underline underline-offset-4">
-                          <strong className="text-blue-400">
-                            react-hook-form
-                          </strong>
-                          <span>을 이용하여 닉네임 실시간 검증</span>
+                          <span className="font-bold">
+                            닉네임 실시간 유효성 검증
+                          </span>
                         </a>
                       </li>
                       <li>
@@ -85,7 +66,7 @@ const Project = () => {
                           href="https://haseungdev.vercel.app/%EA%B8%80%EB%98%90/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%9E%91%EC%97%85(%EC%9D%B4%EB%9D%BC%20%EC%93%B0%EA%B3%A0%20%EC%82%BD%EC%A7%88%EA%B8%B0..)/"
                           target="_blank"
                           rel="noreferrer noopener"
-                          className="hover:opacity-70 underline underline-offset-4">
+                          className="hover:opacity-70 underline underline-offset-4 font-bold">
                           <strong className="text-blue-400">Firebase</strong>를
                           이용하여 이미지 업로드와 삭제 구현
                         </a>
@@ -110,15 +91,20 @@ const Project = () => {
                   <h3 className="font-bold">1. 로그인, 회원가입 폼 제작</h3>
                   <ul className="space-y-3">
                     <li>
-                      <strong className="text-blue-400">react-toastify</strong>{" "}
-                      라이브러리를 사용하여 로그인, 회원가입, 글 작성 완료 등의
-                      프로세스를 알리는 알림창 구현
+                      로그인, 회원가입, 글 작성 완료 등의 프로세스를 알리는{" "}
+                      <a
+                        href="https://haseungdev.vercel.app/%EA%B8%80%EB%98%90/%EC%95%8C%EB%A6%BC%20%EA%B4%80%EB%A0%A8%20%EB%9D%BC%EC%9D%B4%EB%B8%8C%EB%9F%AC%EB%A6%AC%20%EB%8F%84%EC%9E%85%20%ED%9B%84%EA%B8%B0/"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        className="hover:opacity-70 underline underline-offset-4 font-bold">
+                        알림창 구현
+                      </a>
+                      을 통한 UI/UX 개선
                     </li>
                     <li>
-                      <strong className="text-blue-400">react-hook-form</strong>
-                      을 이용하여 회원가입 폼에서 닉네임, 이메일, 비밀번호에
-                      대한 유효성 실시간 검증 및 오류 메시지를 즉시 표시하는
-                      기능 구현
+                      <strong className="text-blue-400">회원가입 폼</strong>에서
+                      닉네임, 이메일, 비밀번호에 대한 유효성 실시간 검증 및 오류
+                      메시지를 즉시 표시하는 기능 구현
                     </li>
                     <li>
                       사용자가 입력한 새로운 비밀번호를 확인하기 위해,
@@ -126,14 +112,41 @@ const Project = () => {
                     </li>
                     <h3 className="font-bold">2. 글 작성 기능 구현</h3>
                     <li className="leading-tight">
-                      React-quill 라이브러리를 이용하여 글 작성 기능 구현,
-                      이미지 삽입 및 리사이징 구현
+                      글 작성 기능 및 이미지 삽입, 리사이징 구현
                     </li>
                     <li className="leading-tight">
                       제목,내용,태그에 대한 validation 적용
                     </li>
                   </ul>
                 </article>
+              </motion.div>
+              <motion.div
+                variants={fadeIn("left", 0.2)}
+                {...commonProps(0.3)}
+                className="flex gap-y-10 border-2 border-gray-500 p-4 rounded-lg">
+                <img className={imgClassName} src={Img3} alt="find-color" />
+                <section className={projectContainerClassName}>
+                  <ProjectNameAndPercent
+                    link="https://find-different-color-beryl.vercel.app/"
+                    name="다른 색깔 찾기 게임"
+                    percent={100}
+                  />
+                  <ProjectDescription description="상태관리 라이브러리 없이 다른 색깔 찾기" />
+                  <span className={implementClasName}>구현 내용</span>
+                  <section>
+                    <ul className="space-y-3">
+                      <li className="leading-tight">
+                        useState를 useReducer로 리팩토링하여 로직 개선
+                      </li>
+                      <li className="leading-tight">
+                        정답 클릭 시 점수 누적 및 난이도 상승하도록 구현
+                      </li>
+                      <li className="leading-tight">
+                        오답 클릭 시 남은 시간 3초씩 줄어들도록 구현
+                      </li>
+                    </ul>
+                  </section>
+                </section>
               </motion.div>
             </div>
           </motion.div>
