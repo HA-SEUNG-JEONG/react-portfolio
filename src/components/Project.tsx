@@ -14,15 +14,15 @@ import ProjectDescription from "./project/ProjectDescription";
 
 const Project = () => {
   return (
-    <section className="flex text-gray-900" id="project">
+    <section className="section text-gray-900" id="project">
       <div className="mx-auto">
-        <div className="flex flex-col justify-center lg:flex-row gap-x-10">
+        <div className="flex lg:flex-row gap-x-10">
           <motion.div
             variants={fadeIn("right", 0.5)}
             {...commonProps(0.3)}
-            className="flex-1 flex flex-col gap-y-6 lg:mb-0">
+            className="flex-1 flex flex-col gap-y-6 mb-10 lg:mb-0 container">
             <h2 className="h2 leading-tight">Project</h2>
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid gap-6">
               {" "}
               <motion.div
                 variants={fadeIn("left", 0.2)}
@@ -84,7 +84,7 @@ const Project = () => {
                   <ProjectNameAndPercent
                     link="https://morakmorak.vercel.app/"
                     name="Morak Morak"
-                    percent={50}
+                    percent={20}
                   />
                   <ProjectDescription description="개발 입문자들을 위한 따뜻한 개발자 커뮤니티" />
                   <h2 className={implementClasName}>구현 내용</h2>
