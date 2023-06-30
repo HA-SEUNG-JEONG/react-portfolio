@@ -17,7 +17,7 @@ const Skills = () => {
             className="mx-auto">
             <h2 className="h2 mb-10">Tech & Tools</h2>
             <section className="space-y-8">
-              <article className="flex justify-center gap-x-2">
+              <article className="flex flex-wrap justify-center gap-x-2">
                 <svg
                   className="w-24 h-24"
                   xmlns="http://www.w3.org/2000/svg"
