@@ -1,16 +1,10 @@
-import { motion } from "framer-motion";
 import profiles from "../assets/profile.jpg";
-import { fadeIn } from "../variant";
 
 const Profile = () => {
   return (
-    <motion.div
-      variants={fadeIn("down", 0.3)}
-      initial="hidden"
-      whileInView={"show"}
-      className="hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]">
+    <div className="hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]">
       <img className="w-72 h-full ml-48" src={profiles} alt="profile" />
-    </motion.div>
+    </div>
   );
 };
 

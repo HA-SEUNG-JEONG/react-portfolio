@@ -1,20 +1,12 @@
 import { useInView } from "react-intersection-observer";
 
-import { motion } from "framer-motion";
-
-import { fadeIn } from "../variant";
-import { commonProps } from "../utils/props";
-
 const Skills = () => {
   const [ref] = useInView({ threshold: 0.5 });
   return (
     <section id="about" className="section" ref={ref}>
       <div className="container rounded-md">
-        <div className="flex lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-32">
-          <motion.div
-            variants={fadeIn("down", 0.3)}
-            {...commonProps(0.3)}
-            className="mx-auto">
+        <div className="flex lg:flex-row  lg:gap-x-20 lg:gap-y-32">
+          <div className="mx-auto lg:justify-center items-center">
             <h2 className="h2 mb-10">Tech & Tools</h2>
             <section className="space-y-8">
               <article className="w-96 flex flex-wrap lg:flex lg:w-full justify-center gap-x-2">
@@ -112,7 +104,7 @@ const Skills = () => {
                 </svg>
               </article>
             </section>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

@@ -1,6 +1,3 @@
-import { motion } from "framer-motion";
-import { fadeIn } from "../variant";
-import { commonProps } from "../utils/props";
 import FormInput from "./contact/FormInput";
 import MessageTextArea from "./contact/MessageTextArea";
 import { useRef } from "react";
@@ -34,16 +31,14 @@ const Contact = () => {
 
   return (
     <section className="py-16 lg:section text-gray-900 mt-48" id="contact">
-      <div className="container mx-auto">
+      <div className="container mx-auto flex flex-col items-center">
         <h3 className="flex justify-center items-center mb-10 font-bold text-[30px] select-none">
           Contact Me
         </h3>
-        <div className="flex flex-col lg:flex-row">
-          <motion.form
+        <div className="flex flex-col lg:flex-row w-[50rem]">
+          <form
             ref={formRef}
             onSubmit={sendEmail}
-            variants={fadeIn("right", 0.2)}
-            {...commonProps(0.3)}
             className="flex-1 border border-gray-900 rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-center justify-center">
             <FormInput placeholder="Email" type="text" name="user_email" />
             <FormInput placeholder="Name" type="text" name="user_name" />
@@ -51,7 +46,7 @@ const Contact = () => {
             <button className="btn btn-lg flex items-center justify-center">
               Send Message
             </button>
-          </motion.form>
+          </form>
         </div>
       </div>
     </section>
