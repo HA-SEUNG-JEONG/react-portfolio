@@ -14,7 +14,17 @@ const Contact = () => {
     const templateId = process.env.REACT_APP_YOUR_TEMPLATE_ID || "";
     const publicKey = process.env.REACT_APP_YOUR_PUBLIC_KEY;
 
-    if (formRef.current) {
+    if (formRef?.current) {
+      const emailInput: HTMLInputElement | null =
+        formRef?.current?.elements.namedItem("user_email") as HTMLInputElement;
+
+      const userEmail = emailInput.value.trim();
+
+      if (!userEmail || !validateEmail(userEmail)) {
+        toast.error("이메일이 유효하지 않습니다. 다시 한번 확인해주세요.");
+        return;
+      }
+
       try {
         const result = await emailjs.sendForm(
           serviceId,
@@ -22,11 +32,16 @@ const Contact = () => {
           formRef.current,
           publicKey
         );
-        toast.success(result.text);
+        if (result.text === "OK") toast.success("메일이 발송되었습니다!");
       } catch (error) {
         if (error instanceof Error) toast.error(error.message);
       }
     }
+  };
+
+  const validateEmail = (email: string) => {
+    const pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return pattern.test(email);
   };
 
   return (
