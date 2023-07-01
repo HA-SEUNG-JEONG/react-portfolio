@@ -28,7 +28,17 @@ const Project = () => {
                     name="SWAP"
                     percent={30}
                   />
+
                   <ProjectDescription description="굿즈 교환 플랫폼 프로젝트" />
+                  <div className="flex flex-wrap gap-y-2 gap-x-2 mb-2 leading-6">
+                    <span className="rounded-lg p-[0.2rem]">#React</span>
+                    <span className="rounded-lg p-[0.2rem]">#TypeScript</span>
+                    <span className="rounded-lg p-[0.2rem]">
+                      #Styled-components
+                    </span>
+                    <span className="rounded-lg p-[0.2rem]">#Recoil</span>
+                    <span className="rounded-lg p-[0.2rem]">#FireBase</span>
+                  </div>
                   <span className={implementClasName}>구현 내용</span>
                   <h3 className="font-bold mb-2">
                     1. 마이페이지 컴포넌트 제작
@@ -77,6 +87,12 @@ const Project = () => {
                     percent={20}
                   />
                   <ProjectDescription description="개발 입문자들을 위한 따뜻한 개발자 커뮤니티" />
+                  <div className="flex gap-x-2 mb-2">
+                    <span className="rounded-lg p-[0.2rem]">#Next</span>
+                    <span className="rounded-lg p-[0.2rem]">#TypeScript</span>
+                    <span className="rounded-lg p-[0.2rem]">#TailwindCSS</span>
+                    <span className="rounded-lg p-[0.2rem]">#Recoil</span>
+                  </div>
                   <h2 className={implementClasName}>구현 내용</h2>
                   <h3 className="font-bold">1. 로그인, 회원가입 폼 제작</h3>
                   <ul className="space-y-3">
@@ -119,6 +135,10 @@ const Project = () => {
                     percent={100}
                   />
                   <ProjectDescription description="상태관리 라이브러리 없이 다른 색깔 찾기" />
+                  <div className="flex flex-wrap gap-y-2 gap-x-2 mb-2 leading-6">
+                    <span className="rounded-lg p-[0.2rem]">#React</span>
+                    <span className="rounded-lg p-[0.2rem]">#TypeScript</span>
+                  </div>
                   <span className={implementClasName}>구현 내용</span>
                   <section>
                     <ul className="space-y-3">
