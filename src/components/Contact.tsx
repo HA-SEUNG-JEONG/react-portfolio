@@ -7,8 +7,8 @@ import { toast } from "react-toastify";
 const Contact = () => {
   const formRef = useRef<HTMLFormElement | null>(null);
 
-  const sendEmail = async (e: React.FormEvent) => {
-    e.preventDefault();
+  const sendEmail = async (formEvent: React.FormEvent) => {
+    formEvent.preventDefault();
 
     const serviceId = process.env.REACT_APP_YOUR_SERVICE_ID || "";
     const templateId = process.env.REACT_APP_YOUR_TEMPLATE_ID || "";
