@@ -1,9 +1,9 @@
 import Skills from "./components/Skills";
 import Banner from "./components/Banner";
-import Contact from "./components/Contact";
+import Contact from "./components/contact/Contact";
 import Header from "./components/headers/Header";
 import Nav from "./components/headers/Nav";
-import Project from "./components/Project";
+import Project from "./components/project/Project";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 

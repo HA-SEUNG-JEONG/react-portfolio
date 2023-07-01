@@ -1,14 +1,15 @@
-import Img1 from "../assets/main_logo.png";
-import Img2 from "../assets/morakcover.png";
-import Img3 from "../assets/find-color.jpg";
+import Img1 from "../../assets/main_logo.png";
+import Img2 from "../../assets/morakcover.png";
+import Img3 from "../../assets/find-color.jpg";
+
 import {
   imgClassName,
   implementClasName,
   projectContainerClassName,
-} from "../utils/props";
+} from "../../utils/props";
 
-import ProjectNameAndPercent from "./project/ProjectNameAndPercent";
-import ProjectDescription from "./project/ProjectDescription";
+import ProjectNameAndPercent from "./ProjectNameAndPercent";
+import ProjectDescription from "./ProjectDescription";
 
 const Project = () => {
   return (

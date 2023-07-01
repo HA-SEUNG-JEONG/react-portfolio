@@ -1,5 +1,5 @@
-import FormInput from "./contact/FormInput";
-import MessageTextArea from "./contact/MessageTextArea";
+import FormInput from "./FormInput";
+import MessageTextArea from "./MessageTextArea";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
