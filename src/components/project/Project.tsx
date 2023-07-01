@@ -24,8 +24,8 @@ const Project = () => {
                 <img className={imgClassName} src={Img1} alt="swap" />
                 <section className={projectContainerClassName}>
                   <ProjectNameAndPercent
-                    link="https://morakmorak.vercel.app/"
-                    name="MorakMorak"
+                    link="https://swap-a69f8.firebaseapp.com/"
+                    name="SWAP"
                     percent={30}
                   />
                   <ProjectDescription description="굿즈 교환 플랫폼 프로젝트" />
