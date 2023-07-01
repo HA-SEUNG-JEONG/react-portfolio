@@ -11,10 +11,10 @@ const ProjectNameAndPercent = ({
 }: NameAndPercentProps) => {
   return (
     <h1 className="font-bold">
-      <a className="hover:opacity-70 underline underline-offset-4" href={link}>
+      <a className="hover:opacity-70 text-blue-600" href={link}>
         {name}
       </a>{" "}
-      <span className="text-blue-600">프로젝트 참여율 : {percent}%</span>
+      <span className="opacity-50 text-sm">프로젝트 참여율 : {percent}%</span>
     </h1>
   );
 };
