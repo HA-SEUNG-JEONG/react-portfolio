@@ -21,7 +21,7 @@ const Contact = () => {
       const userEmail = emailInput.value.trim();
 
       if (!userEmail || !validateEmail(userEmail)) {
-        toast.error("이메일이 유효하지 않습니다. 다시 한번 확인해주세요.");
+        toast.error("유효한 이메일이 아닙니다. 다시 한번 확인해주세요.");
         return;
       }
 
