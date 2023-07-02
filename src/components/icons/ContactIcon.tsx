@@ -1,4 +1,4 @@
-import { BsChatSquareText } from "react-icons/bs";
+import { RiContactsFill } from "react-icons/ri";
 import { Link } from "react-scroll";
 
 const ContactIcon = () => {
@@ -9,7 +9,7 @@ const ContactIcon = () => {
       activeClass="active"
       smooth={true}
       spy={true}>
-      <BsChatSquareText />
+      <RiContactsFill />
     </Link>
   );
 };
