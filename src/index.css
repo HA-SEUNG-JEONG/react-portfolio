@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.btn:hover {
-  background-color: #88abdb;
-}
-
 .active {
   color: #fff;
   padding: 1rem;
@@ -20,7 +16,7 @@
     @apply flex justify-center items-center font-bold text-[30px] select-none text-gray-900;
   }
   .btn {
-    @apply rounded-full text-white font-medium bg-[#452EA0];
+    @apply rounded-full text-white font-medium bg-[#06232F];
   }
   .btn-sm {
     @apply h-[48px] px-6 text-sm;
