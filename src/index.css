@@ -20,7 +20,7 @@
     @apply flex justify-center items-center font-bold text-[30px] select-none text-gray-900;
   }
   .btn {
-    @apply rounded-full text-white font-medium bg-[#648ec9];
+    @apply rounded-full text-white font-medium bg-[#452EA0];
   }
   .btn-sm {
     @apply h-[48px] px-6 text-sm;
