@@ -30,14 +30,12 @@ const Project = () => {
                   />
 
                   <ProjectDescription description="굿즈 교환 플랫폼 프로젝트" />
-                  <div className="flex flex-wrap gap-y-2 gap-x-2 mb-2 leading-6">
-                    <span className="rounded-lg p-[0.2rem]">#React</span>
-                    <span className="rounded-lg p-[0.2rem]">#TypeScript</span>
-                    <span className="rounded-lg p-[0.2rem]">
-                      #Styled-components
-                    </span>
-                    <span className="rounded-lg p-[0.2rem]">#Recoil</span>
-                    <span className="rounded-lg p-[0.2rem]">#FireBase</span>
+                  <div className="text-[15px] flex gap-y-2 mb-2 leading-6">
+                    <span className="px-[0.5rem]">#React</span>
+                    <span className="px-[0.5rem]">#TypeScript</span>
+                    <span className="px-[0.5rem]">#Styled-components</span>
+                    <span className="px-[0.5rem]">#Recoil</span>
+                    <span className="px-[0.5rem]">#FireBase</span>
                   </div>
                   <span className={implementClasName}>구현 내용</span>
                   <h3 className="font-bold mb-2">
@@ -87,11 +85,11 @@ const Project = () => {
                     percent={20}
                   />
                   <ProjectDescription description="개발 입문자들을 위한 따뜻한 개발자 커뮤니티" />
-                  <div className="flex gap-x-2 mb-2">
-                    <span className="rounded-lg p-[0.2rem]">#Next</span>
-                    <span className="rounded-lg p-[0.2rem]">#TypeScript</span>
-                    <span className="rounded-lg p-[0.2rem]">#TailwindCSS</span>
-                    <span className="rounded-lg p-[0.2rem]">#Recoil</span>
+                  <div className="text-[15px] flex gap-y-2 mb-2 leading-6">
+                    <span className="px-[0.5rem]">#Next</span>
+                    <span className="px-[0.5rem]">#TypeScript</span>
+                    <span className="px-[0.5rem]">#TailwindCSS</span>
+                    <span className="px-[0.5rem]">#Recoil</span>
                   </div>
                   <h2 className={implementClasName}>구현 내용</h2>
                   <h3 className="font-bold">1. 로그인, 회원가입 폼 제작</h3>
@@ -118,10 +116,10 @@ const Project = () => {
                     </li>
                     <h3 className="font-bold">2. 글 작성 기능 구현</h3>
                     <li className="leading-tight">
-                      글 작성 기능 및 이미지 삽입, 리사이징 구현
+                      제목,내용,태그에 대한 validation 적용
                     </li>
                     <li className="leading-tight">
-                      제목,내용,태그에 대한 validation 적용
+                      태그에 대한 드롭다운 기능 구현
                     </li>
                   </ul>
                 </article>
@@ -135,7 +133,7 @@ const Project = () => {
                     percent={100}
                   />
                   <ProjectDescription description="상태관리 라이브러리 없이 다른 색깔 찾기" />
-                  <div className="flex flex-wrap gap-y-2 gap-x-2 mb-2 leading-6">
+                  <div className="flex gap-y-2 mb-2 leading-6">
                     <span className="rounded-lg p-[0.2rem]">#React</span>
                     <span className="rounded-lg p-[0.2rem]">#TypeScript</span>
                   </div>
