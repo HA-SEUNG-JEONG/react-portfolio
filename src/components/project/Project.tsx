@@ -50,7 +50,7 @@ const Project = () => {
                       <ul className="space-y-3">
                         <li>
                           <a
-                            href="https://haseungdev.vercel.app/React/%EB%8B%89%EB%84%A4%EC%9E%84%20%EC%9E%90%EC%9D%8C,%EB%AA%A8%EC%9D%8C%20%EC%B2%98%EB%A6%AC%20%EB%B0%8F%20%EB%8B%89%EB%84%A4%EC%9E%84%20%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0/"
+                            href="https://nextjs-blog-haseungdev.vercel.app/blog/%EB%8B%89%EB%84%A4%EC%9E%84%20%EC%9E%90%EC%9D%8C,%EB%AA%A8%EC%9D%8C%20%EC%B2%98%EB%A6%AC%20%EB%B0%8F%20%EB%8B%89%EB%84%A4%EC%9E%84%20%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0"
                             target="_blank"
                             rel="noreferrer noopener"
                             className="hover:opacity-70 underline underline-offset-4">
@@ -69,7 +69,7 @@ const Project = () => {
                         </h3>
                         <li>
                           <a
-                            href="https://haseungdev.vercel.app/%EA%B8%80%EB%98%90/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%9E%91%EC%97%85(%EC%9D%B4%EB%9D%BC%20%EC%93%B0%EA%B3%A0%20%EC%82%BD%EC%A7%88%EA%B8%B0..)/"
+                            href="https://nextjs-blog-haseungdev.vercel.app/blog/%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EC%9E%91%EC%97%85(..%EC%9D%B4%EB%9D%BC%EA%B3%A0%20%EC%93%B0%EA%B3%A0%20%EC%82%BD%EC%A7%88%EA%B8%B0)"
                             target="_blank"
                             rel="noreferrer noopener"
                             className="hover:opacity-70 underline underline-offset-4 font-bold">
@@ -104,7 +104,7 @@ const Project = () => {
                     <section>
                       <ul className="space-y-3">
                         <li>
-                          로그인, 회원가입, 글 작성 완료 등의 프로세스를 알리는
+                          로그인, 회원가입, 글 작성 완료 등의 프로세스를 알리는{" "}
                           <a
                             href="https://nextjs-blog-haseungdev.vercel.app/blog/noreferrer%EC%99%80%20noopener"
                             target="_blank"
