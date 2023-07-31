@@ -2,25 +2,31 @@ import Img1 from "../../assets/main_logo.png";
 import Img2 from "../../assets/morakcover.png";
 import Img3 from "../../assets/find-color.jpg";
 
+import { motion } from "framer-motion";
+
+import ProjectNameAndPercent from "./ProjectNameAndPercent";
+import ProjectDescription from "./ProjectDescription";
+import { fadeIn } from "../../utils/variant";
 import {
+  commonProps,
   imgClassName,
   implementClasName,
   projectContainerClassName,
 } from "../../utils/props";
-
-import ProjectNameAndPercent from "./ProjectNameAndPercent";
-import ProjectDescription from "./ProjectDescription";
 
 const Project = () => {
   return (
     <section className="flex justify-center text-gray-900" id="project">
       <div className="mx-auto">
         <div className="flex lg:flex-row gap-x-10">
-          <div className="flex-1 flex flex-col gap-y-6 mb-10 lg:mb-0 container">
+          <motion.div className="flex-1 flex flex-col gap-y-6 mb-10 lg:mb-0 container">
             <h2 className="h2 leading-tight">Project</h2>
             <main>
               <div className="grid gap-6">
-                <div className="flex gap-y-10 border-2 border-gray-500 p-4 rounded-lg">
+                <motion.div
+                  variants={fadeIn("left", 0.2)}
+                  {...commonProps(0.3)}
+                  className="flex gap-y-10 border-2 border-gray-500 p-4 rounded-lg">
                   <img className={imgClassName} src={Img1} alt="swap" />
                   <section className={projectContainerClassName}>
                     <ProjectNameAndPercent
@@ -81,8 +87,11 @@ const Project = () => {
                       </ul>
                     </section>
                   </section>
-                </div>
-                <div className="flex gap-y-10 border-2 border-gray-500 p-4 rounded-lg">
+                </motion.div>
+                <motion.div
+                  variants={fadeIn("left", 0.2)}
+                  {...commonProps(0.3)}
+                  className="flex gap-y-10 border-2 border-gray-500 p-4 rounded-lg">
                   <img className={imgClassName} src={Img2} alt="morakmorak" />
                   <article className={projectContainerClassName}>
                     <ProjectNameAndPercent
@@ -127,8 +136,11 @@ const Project = () => {
                       </ul>
                     </section>
                   </article>
-                </div>
-                <div className="flex gap-y-10 border-2 border-gray-500 p-4 rounded-lg">
+                </motion.div>
+                <motion.div
+                  variants={fadeIn("left", 0.2)}
+                  {...commonProps(0.3)}
+                  className="flex gap-y-10 border-2 border-gray-500 p-4 rounded-lg">
                   <img className={imgClassName} src={Img3} alt="find-color" />
                   <article className={projectContainerClassName}>
                     <ProjectNameAndPercent
@@ -152,10 +164,10 @@ const Project = () => {
                       </ul>
                     </section>
                   </article>
-                </div>
+                </motion.div>
               </div>
             </main>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

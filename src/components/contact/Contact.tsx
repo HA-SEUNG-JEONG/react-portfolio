@@ -3,6 +3,9 @@ import MessageTextArea from "./MessageTextArea";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../utils/variant";
+import { commonProps } from "../../utils/props";
 
 const Contact = () => {
   const formRef = useRef<HTMLFormElement | null>(null);
@@ -51,9 +54,11 @@ const Contact = () => {
           Contact Me
         </h3>
         <div className="flex flex-col lg:flex-row w-[50rem]">
-          <form
+          <motion.form
             ref={formRef}
             onSubmit={sendEmail}
+            variants={fadeIn("right", 0.2)}
+            {...commonProps(0.3)}
             className="flex-1 border border-gray-900 rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-center justify-center">
             <FormInput placeholder="Email" type="text" name="user_email" />
             <FormInput placeholder="Name" type="text" name="user_name" />
@@ -61,7 +66,7 @@ const Contact = () => {
             <button className="btn btn-lg flex items-center justify-center">
               Send Message
             </button>
-          </form>
+          </motion.form>
         </div>
       </div>
     </section>
