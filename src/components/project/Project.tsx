@@ -27,6 +27,7 @@ const Project = () => {
                       link="https://swap-a69f8.firebaseapp.com/"
                       name="SWAP"
                       percent={30}
+                      period="2022.07~2023.04"
                     />
                     <ProjectDescription description="굿즈 교환 플랫폼 프로젝트" />
                     <div className="text-[15px] flex gap-y-2 mb-2 leading-6">
@@ -88,6 +89,7 @@ const Project = () => {
                       link="https://morakmorak.vercel.app/"
                       name="Morak Morak"
                       percent={20}
+                      period="2022.11~2023.03"
                     />
                     <ProjectDescription description="개발 입문자들을 위한 따뜻한 개발자 커뮤니티" />
                     <div className="text-[15px] flex gap-y-2 mb-2 leading-6">
@@ -133,6 +135,7 @@ const Project = () => {
                       link="https://find-different-color-beryl.vercel.app/"
                       name="다른 색깔 찾기 게임"
                       percent={100}
+                      period="2022.05~2023.06"
                     />
                     <ProjectDescription description="상태관리 라이브러리 없이 다른 색깔 찾기" />
                     <div className="flex gap-y-2 mb-2 leading-6">
