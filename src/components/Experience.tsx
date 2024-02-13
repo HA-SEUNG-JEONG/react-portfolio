@@ -60,7 +60,7 @@ const Experience = () => {
                                             href="https://morethan-haseung-log.vercel.app/video"
                                             target="_blank"
                                             rel="noreferrer noopener"
-                                            className="hover:opacity-70 underdivne text-blue-400 underline-offset-4 font-bold"
+                                            className="hover:opacity-70 underline text-blue-400 underline-offset-4 font-bold"
                                         >
                                             video 배율 보여주기
                                         </a>
