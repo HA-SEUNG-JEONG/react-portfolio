@@ -19,44 +19,41 @@ const Project = () => {
                 <div className="flex lg:flex-row gap-x-10">
                     <motion.div className="flex-1 flex flex-col gap-y-6 mb-10 lg:mb-0 container">
                         <h2 className="h2 leading-tight">Project</h2>
-                        <main>
+
+                        <main className="flex">
+                            <div>
+                                <ProjectNameAndPercent
+                                    link="https://swap-a69f8.firebaseapp.com/"
+                                    name="SWAP"
+                                    period="2022.07~2023.04"
+                                />
+                                <ProjectDescription description="굿즈 교환 플랫폼 프로젝트" />
+                                <div className="text-[15px] flex mb-6 gap-x-1 leading-6 flex-wrap w-56">
+                                    {[
+                                        "#React",
+                                        "#TypeScript",
+                                        "#Styled-components",
+                                        "#Recoil",
+                                        "#FireBase"
+                                    ].map((el, i) => (
+                                        <span key={i}>{el}</span>
+                                    ))}
+                                </div>
+                                <img
+                                    className={imgClassName}
+                                    src={Img1}
+                                    alt="swap"
+                                />
+                            </div>
                             <div className="grid gap-6">
                                 <motion.div
                                     variants={fadeIn("left", 0.2)}
                                     {...commonProps(0.3)}
-                                    className="flex gap-y-10 border-2 border-gray-500 p-4 rounded-lg"
+                                    className="flex gap-y-10 rounded-lg"
                                 >
-                                    <img
-                                        className={imgClassName}
-                                        src={Img1}
-                                        alt="swap"
-                                    />
                                     <section
                                         className={projectContainerClassName}
                                     >
-                                        <ProjectNameAndPercent
-                                            link="https://swap-a69f8.firebaseapp.com/"
-                                            name="SWAP"
-                                            percent={30}
-                                            period="2022.07~2023.04"
-                                        />
-                                        <ProjectDescription description="굿즈 교환 플랫폼 프로젝트" />
-                                        <div className="text-[15px] flex gap-y-2 mb-2 leading-6">
-                                            {[
-                                                "#React",
-                                                "#TypeScript",
-                                                "#Styled-components",
-                                                "#Recoil",
-                                                "#FireBase"
-                                            ].map((el, i) => (
-                                                <span
-                                                    key={i}
-                                                    className="px-[0.5rem]"
-                                                >
-                                                    {el}
-                                                </span>
-                                            ))}
-                                        </div>
                                         <span className={implementClasName}>
                                             구현 내용
                                         </span>
