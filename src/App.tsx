@@ -6,19 +6,25 @@ import Nav from "./components/headers/Nav";
 import Project from "./components/project/Project";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Experience from "./components/Experience";
 
 const App = () => {
-  return (
-    <section>
-      <ToastContainer theme="colored" autoClose={3000} position="top-center" />
-      <Header />
-      <Banner />
-      <Nav />
-      <Skills />
-      <Project />
-      <Contact />
-    </section>
-  );
+    return (
+        <section>
+            <ToastContainer
+                theme="colored"
+                autoClose={3000}
+                position="top-center"
+            />
+            <Header />
+            <Banner />
+            <Nav />
+            <Experience />
+            <Skills />
+            <Project />
+            <Contact />
+        </section>
+    );
 };
 
 export default App;
