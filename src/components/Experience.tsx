@@ -1,12 +1,15 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/variant";
-import { commonProps, projectContainerClassName } from "../utils/props";
+import { commonProps } from "../utils/props";
 import ProjectDescription from "./project/ProjectDescription";
 import ProjectNameAndPercent from "./project/ProjectNameAndPercent";
 
 const Experience = () => {
     return (
-        <div className="flex flex-col items-center justify-center text-gray-900">
+        <div
+            id="experience"
+            className="flex flex-col items-center justify-center text-gray-900"
+        >
             <h2 className="h2 leading-tight mb-2">Experience</h2>
             <main>
                 <div className="grid gap-6">
@@ -52,12 +55,12 @@ const Experience = () => {
                                     <h3 className="font-bold">
                                         3. 상태 관리 툴 마이그레이션
                                     </h3>
-                                    <li>
+                                    <div>
                                         <a
                                             href="https://morethan-haseung-log.vercel.app/video"
                                             target="_blank"
                                             rel="noreferrer noopener"
-                                            className="hover:opacity-70 underline text-blue-400 underline-offset-4 font-bold"
+                                            className="hover:opacity-70 underdivne text-blue-400 underline-offset-4 font-bold"
                                         >
                                             video 배율 보여주기
                                         </a>
@@ -66,8 +69,8 @@ const Experience = () => {
                                             이용하여 비디오의 배율 렌더링하면서
                                             얻은 경험에 대해 기록했습니다.
                                         </li>
-                                    </li>
-                                    <li>
+                                    </div>
+                                    <div>
                                         <a
                                             href="https://morethan-haseung-log.vercel.app/recoil-to-jotai"
                                             target="_blank"
@@ -86,7 +89,7 @@ const Experience = () => {
                                             Recoil을 비교하면서 Jotai를
                                             적용했습니다.
                                         </li>
-                                    </li>
+                                    </div>
                                 </ul>
                             </section>
                         </section>
